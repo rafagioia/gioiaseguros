@@ -1,0 +1,52 @@
+2023-10-19 19:38:27,766 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-10-19 19:38:27,768 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-10-19 19:38:27,771 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --quiet: "True", --verbosity: "warning"]
+2023-10-19 19:38:27,788 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/gioiaseguros@gmail.com/?recursive=true
+2023-10-19 19:38:27,791 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-10-19 19:38:27,793 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/gioiaseguros@gmail.com/?recursive=true HTTP/1.1" 200 None
+2023-10-19 19:38:27,794 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/gioiaseguros@gmail.com/token
+2023-10-19 19:38:27,796 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-10-19 19:38:27,798 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/gioiaseguros@gmail.com/token HTTP/1.1" 200 None
+2023-10-19 19:38:27,808 DEBUG    root            Chosen display Format:default json
+2023-10-19 19:38:27,809 INFO     root            Display format: "default json"
+2023-10-19 19:38:27,810 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "accessibility": {
+        "screen_reader": "True"
+      },
+      "component_manager": {
+        "disable_update_check": "True"
+      },
+      "compute": {
+        "gce_metadata_read_timeout_sec": "30"
+      },
+      "container": {
+        "use_application_default_credentials": "true"
+      },
+      "core": {
+        "account": "gioiaseguros@gmail.com",
+        "disable_prompts": "True",
+        "disable_usage_reporting": "True",
+        "print_unhandled_tracebacks": "true",
+        "verbosity": "warning"
+      },
+      "metrics": {
+        "environment": "cloudcode.vscode",
+        "environment_version": "1.21.4"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AfB_byBI-5J3CxaB5QB7mSjmA-q9swIwj0dCSywICOCckatxBZUJZOGaLeSiXoifa34NJ0svMlbb8IP5N3tMkYYjDWWfUBz8O0kiL6LeSqAfPQaAvQTWTZxoUhclHn5QOML2FIDbO1V2mzzF7RazAwYjK7_lvmU4ftXJoXbeBQe-rFgDKA4jQ_aDW8VpLF2deGKR6DcFtBNeDMWW_lNmHDrz-UCoWXDC9QSrcEhjO2UqkxlzAyAgTPdqAKS-1LYcpHAiBIdUV6ygRO1-rsnC27tDlYSUTGpyPhR9BfCJrz2ORWWIft0AMQhgU-SCpF_JuXA3FjhbBTgCTk6kEdA7QNhoZWoaACgiVqagymX4zaroXVrRYgYEJ4ugouh-LqP2_6VPKP3Z1uwrvPGQc_hriK2zJl1ZcQ0aCgYKAfcSARASFQGOcNnCgwVUDUk5LHeDzwyB4gZIUw0422",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjdkMzM0NDk3NTA2YWNiNzRjZGVlZGFhNjYxODRkMTU1NDdmODM2OTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA0MjgzNDc1NjgxNTQyMzEyMTQxIiwiZW1haWwiOiJnaW9pYXNlZ3Vyb3NAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJHVlI5ejByaF93WVVGQU5Vdmxmb3dnIiwibmJmIjoxNjk3NzQwOTE2LCJpYXQiOjE2OTc3NDEyMTYsImV4cCI6MTY5Nzc0NDgxNiwianRpIjoiYWZlODI1MTdhNmY2NzRlNDdiNDcwZjIyNzA0NmFlMWVmYmM3NWIxNyJ9.fFA-BC2G36DuY3C4a8f71vm_pVjVKRmeaByhcXDB2oQpOqG-nZzwGlYXuoFpR9JHpb1rpSM2ZD3BwxhcXKFnrS1fXVlFUrvARXG0HLPTgMGcVbNmCsldaBH9a8XeBMt-pB-094pVNIoOb8Ut0N31dyk4EwyaUJ1peE5zBeSPFeO-Ztmg13lA661d0hDl--mpheuc_TQuA95BbIDOfz1EPe6sPYBa7Vz6IENbHnDrCoC5uxismFsPnnP33_ZtIpNGdbOUNwZJn8ONFay61ELvLlUQvIjS3m-67ko4RWx1Ra-gktkus4Kq8pInP3aLOnvIzW13IMOkJViB8914Nnckdg",
+    "token_expiry": "2023-10-19T19:46:53Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/gioiaseguros/.config/gcloud/config_sentinel"
+  }
+}
+2023-10-19 19:38:27,810 INFO     ___FILE_ONLY___ 
+
+2023-10-19 19:38:27,811 DEBUG    root            SDK update checks are disabled.

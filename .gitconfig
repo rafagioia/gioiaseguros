@@ -1,0 +1,7 @@
+[user]
+	name = Rafa Gioia
+	email = codename.rafagioia@gmail.com
+[init]
+	defaultBranch = master
+[credential]
+	helper = store
